@@ -3,5 +3,15 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="main/java"/>
 	<classpathentry kind="src" path="test/java"/>
+	<classpathentry kind="lib" path="C:/Users/emanuel_ioan.radu/.m2/repository/ro/ghionoiu/tdl-client-java/0.22.2/tdl-client-java-0.22.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="ro.ghionoiu"/>
+			<attribute name="maven.artifactId" value="tdl-client-java"/>
+			<attribute name="maven.version" value="0.22.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
