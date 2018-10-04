@@ -124,7 +124,7 @@ public class FizzBuzzSolution {
     }
     
     public Boolean isFakeDeluxe(Integer number) {
-    	if(this.isFizzDeluxe(number) || this.isBuzzDeluxe(number) && (number % 2 == 0 )) {
+    	if(this.isFizzDeluxe(number) || this.isBuzzDeluxe(number) && (number % 2 == 1 )) {
     		return true;
     	}
     	return false;
