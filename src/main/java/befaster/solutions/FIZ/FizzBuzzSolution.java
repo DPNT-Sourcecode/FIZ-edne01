@@ -6,6 +6,10 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         //throw new SolutionNotImplementedException();
+    	
+    	if(((number % 3) == 0) && (( number % 5) == 0)) {
+    		return "fizz buzz";
+    	}
     	if((number % 3) == 0) {
     		return "fizz";
     	}
@@ -13,9 +17,6 @@ public class FizzBuzzSolution {
     		return "buzz";
     	}
     	
-    	if((number % 3) == 0)) && (( number % 5) == 0)) {
-    		return "fizz buzz";
-    	}
     	
     	return number.toString();
     }
