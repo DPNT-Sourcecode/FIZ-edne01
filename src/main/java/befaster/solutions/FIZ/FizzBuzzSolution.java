@@ -16,8 +16,8 @@ public class FizzBuzzSolution {
     	if((number % 5) == 0) {
     		return "buzz";
     	} */
-    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5"))) {
-    		return "fizz buzz";
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    		return "fizz buzz deluxe";
     		
     	}
     	if(((number % 3) == 0 ) || number.toString().contains("3")) {
@@ -28,15 +28,16 @@ public class FizzBuzzSolution {
     		return "buzz";
     	}
     	
-    	if(this.allCharactersSame(number.toString())) {
+    	if(this.allCharactersSameAndGreaterThan10(number.toString())) {
     		return "deluxe";
     	}
     	
     	
     	return number.toString();
     }
-    public boolean allCharactersSame(String s) 
+    public boolean allCharactersSameAndGreaterThan10(String s) 
     { 
+    	if(Integer.parseInt(s) > 10) {
         int n = s.length(); 
         for (int i = 1; i < n; i++) 
             if (s.charAt(i) != s.charAt(0)) 
@@ -44,5 +45,7 @@ public class FizzBuzzSolution {
               
         return true; 
     } 
-
+    
+    return false;
+    }
 }
