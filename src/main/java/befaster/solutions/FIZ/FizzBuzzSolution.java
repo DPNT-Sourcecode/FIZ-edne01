@@ -29,7 +29,6 @@ public class FizzBuzzSolution {
     	}
     	
     	
-    	
     	return number.toString();
     }
 
