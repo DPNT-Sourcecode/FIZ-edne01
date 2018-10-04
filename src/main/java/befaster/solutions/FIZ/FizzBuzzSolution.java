@@ -20,6 +20,9 @@ public class FizzBuzzSolution {
     		return "fizz buzz deluxe";
     		
     	}
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5"))) {
+    		return "fizz buzz";
+    	}
     	if(((number % 3) == 0 ) || number.toString().contains("3")) {
     		return "fizz";
     	}
