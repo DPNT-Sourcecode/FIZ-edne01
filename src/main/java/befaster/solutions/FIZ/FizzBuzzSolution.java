@@ -23,6 +23,14 @@ public class FizzBuzzSolution {
     	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5"))) {
     		return "fizz buzz";
     	}
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    		return "fizz deluxe";
+    	}
+    	
+    	if((((number % 5) == 0 ) || number.toString().contains("5")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    		return "buzz deluxe";
+    	}
+    	
     	if(((number % 3) == 0 ) || number.toString().contains("3")) {
     		return "fizz";
     	}
