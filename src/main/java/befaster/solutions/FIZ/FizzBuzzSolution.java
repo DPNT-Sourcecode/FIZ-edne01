@@ -21,7 +21,6 @@ public class FizzBuzzSolution {
     			return "fizz buzz deluxe";
     		}
     		
-    		
     	}
     	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5"))) {
     		return "fizz buzz";
@@ -94,9 +93,18 @@ public class FizzBuzzSolution {
     }
     
     public Boolean isDeluxe(Integer number) {
+    	if((this.isFizzDeluxe(number) || this.isBuzzDeluxe(number)) && (number % 2 == 0) ) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public Boolean isDeluxe(Integer number) {
     	if(this.isFizzDeluxe(number) || this.isBuzzDeluxe(number)) {
     		return true;
     	}
     	return false;
     }
+    
+    
 }
