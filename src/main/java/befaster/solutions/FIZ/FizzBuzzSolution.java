@@ -16,19 +16,38 @@ public class FizzBuzzSolution {
     	if((number % 5) == 0) {
     		return "buzz";
     	} */
-    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5")) && this.isde) {
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5")) ) {
+    		if(this.isDeluxe(number)) {
     		return "fizz buzz deluxe";
+    		}
+    		
+    		if(this.isFakeDeluxe(number)) {
+    			return "fizz buzz fake deluxe";
+    		}
+    		
     		
     	}
     	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5"))) {
     		return "fizz buzz";
     	}
-    	if((((number % 3) == 0 ) || number.toString().contains("3")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) ) {
+    		if(this.isDeluxe(number)) {
     		return "fizz deluxe";
+    		}
+    		
+    		if(this.isFakeDeluxe(number)) {
+    			return "fizz fake deluxe";
+    		}
+    		
     	}
     	
-    	if((((number % 5) == 0 ) || number.toString().contains("5")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    	if((((number % 5) == 0 ) || number.toString().contains("5")) ) {
+    		if(this.isDeluxe(number)) {
     		return "buzz deluxe";
+    	}
+    		if(this.isFakeDeluxe(number)) {
+    			return "buzz fake deluxe";
+    		}
     	}
     	
     	if(((number % 3) == 0 ) || number.toString().contains("3")) {
@@ -39,8 +58,12 @@ public class FizzBuzzSolution {
     		return "buzz";
     	}
     	
-    	if(this.allCharactersSameAndGreaterThan10(number.toString())) {
+    	if(this.isDeluxe(number)) {
     		return "deluxe";
+    	}
+    	
+    	if(this.isFakeDeluxe(number)) {
+    		return "fake deluxe";
     	}
     	
     	
