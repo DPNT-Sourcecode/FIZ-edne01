@@ -16,7 +16,7 @@ public class FizzBuzzSolution {
     	if((number % 5) == 0) {
     		return "buzz";
     	} */
-    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5")) && this.allCharactersSameAndGreaterThan10(number.toString())) {
+    	if((((number % 3) == 0 ) || number.toString().contains("3")) && (((number % 5) == 0 ) || number.toString().contains("5")) && this.isde) {
     		return "fizz buzz deluxe";
     		
     	}
@@ -58,5 +58,19 @@ public class FizzBuzzSolution {
     } 
     
     return false;
+    }
+    
+    public Boolean isDeluxe(Integer number) {
+    	if(this.allCharactersSameAndGreaterThan10(number.toString()) && (number % 2 == 0)) {
+    		return true;
+    	}
+    	return false;
+    }
+    
+    public Boolean isFakeDeluxe(Integer number) {
+    	if(this.allCharactersSameAndGreaterThan10(number.toString()) && (number % 2 == 1)) {
+    		return true;
+    	}
+    	return false;
     }
 }
